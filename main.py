@@ -113,12 +113,41 @@ while exitProgram == 0:  # make the loop for forever
         selectedType = input("Enter your option here: ")
         numberOfHoursTour = input("Enter the number of hours wanted: ")
         dayOfTour = input("Enter day of rental: ")
-        monthOfTour = input("Enter the month of rental: ")
+        rawMonthOfTour = input("Enter the month of rental: ")
         yearOfTour = input("Enter the year of rental: ")
 
         #disregard case sensitivity and use lowercase
         selectedType.lower()
+		rawMonthOfTour.lower()
 
+		# convert the months to number values
+        if rawMonthOfRental == "january":
+            monthOfRental = "1"
+        elif rawMonthOfRental == "febuary":
+            monthOfRental = "2"
+        elif rawMonthOfRental == "march":
+            monthOfRental = "3"
+        elif rawMonthOfRental == "april":
+            monthOfRental = "4"
+        elif rawMonthOfRental == "may":
+            monthOfRental = "5"
+        elif rawMonthOfRental == "june":
+            monthOfRental = "6"
+        elif rawMonthOfRental == "july":
+            monthOfRental = "7"
+        elif rawMonthOfRental == "august":
+            monthOfRental = "8"
+        elif rawMonthOfRental == "september":
+            monthOfRental = "9"
+        elif rawMonthOfRental == "october":
+            monthOfRental = "10"
+        elif rawMonthOfRental == "november":
+            monthOfRental = "11"
+        elif rawMonthOfRental == "december":
+            monthOfRental = "12"
+        else:
+            print("That is not a valid option!")
+		
         # select value of the price
         if selectedType == "suba diving":
             option = price.scubaDiving
@@ -153,7 +182,7 @@ while exitProgram == 0:  # make the loop for forever
         quantity = input("Enter quantity here: ")
 
         # disregard case and use lowercase
-        menuOption.lower()()
+        menuOption.lower()
 
         #get price of the item wanted
         if menuOption == "canned pop":
