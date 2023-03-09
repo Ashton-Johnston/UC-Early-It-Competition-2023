@@ -1,7 +1,7 @@
 # UC-Early-It-Competition-2023
 This is the code used for the Programing competition for University of Cincinnati in spring of 2023.<br />
 
-{!!!! MAKE SURE YOU HAVE PYTHON INSTALLED !!!!} <br />
+{!!!! MAKE SURE YOU HAVE PYTHON INSTALLED !!!!} <br /> <br />
 For beginner Windows users: <br />
 [1] download the zip file from code --> zip file. <br />
 [2] extract to your downloads folder. <br />
